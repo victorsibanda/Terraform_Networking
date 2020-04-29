@@ -101,6 +101,22 @@ In AWS autoscaling works by creating collections of EC2 instances called Auto Sc
 
 ![as-basic-diagram](https://user-images.githubusercontent.com/60632288/80633007-fffc5d80-8a4f-11ea-8ca7-b2b4014af365.png)
 
+## Example of Terraform Autoscaling
+
+```hcl
+resource "aws_autoscaling_group" "bar" {
+  availability_zones = ["us-east-1a"]
+  desired_capacity   = 1
+  max_size           = 1
+  min_size           = 1
+
+  launch_template {
+    id      = "${aws_launch_template.foobar.id}"
+    version = "$Latest"
+  }
+}
+```
+
 
 
 
