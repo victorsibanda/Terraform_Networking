@@ -97,7 +97,10 @@ autoscaling helps ensure that you have the correct number of EC2 instances avail
 
 ## - How does it work?
 
-In AWS autoscaling works by creating collections of EC2 instances called Auto Scaling Groups, You can specify the ammount of instances in each group and
+In AWS autoscaling works by creating collections of EC2 instances called Auto Scaling Groups, You can specify the minimum amount of instances in each group and Amazon EC2 Auto Scaling ensures your group never goes below this size. You can also specify the maximum which means it never goes above that size. (Which becomes useful in saving costs). Therefore if there is ever a need to scale out above the desired capacity Amazon automatically scales out for you reducing it when the capacity drops.
+
+![as-basic-diagram](https://user-images.githubusercontent.com/60632288/80633007-fffc5d80-8a4f-11ea-8ca7-b2b4014af365.png)
+
 
 
 
