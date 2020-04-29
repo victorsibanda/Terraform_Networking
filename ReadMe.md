@@ -93,7 +93,7 @@ Failure detection and recovery for redundant systems can be implemented using a 
 
 # Auto Scaling
 
-autoscaling helps ensure that you have the correct number of EC2 instances available to handle the load for your application.
+Autoscaling helps ensure that you have the correct number of EC2 instances available to handle the load for your application.
 
 ## - How does it work?
 
