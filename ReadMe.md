@@ -83,16 +83,27 @@ When using immutable infrastructure, scaling out becomes easier, as you are able
 
 ## What is High Availability?
 
+Availability is used to describe when a service is available, in addition to to the time required by a system to respond to a request made by the user. High Availability is a quality of a system that assures high level of operational performance for a given time period. e.g facebook loading fast when you navigate their website.
 
+High Availability is important when setting up a system as minimising downtime and service interruptions means that you reduce the number of events of problems occurring with your system.
+
+Redundancy alone cannot guarantee high availability. A mechanism must be in place for detecting failures and taking action when one of the components of your stack becomes unavailable.
+
+Failure detection and recovery for redundant systems can be implemented using a top-to-bottom approach: the layer on top becomes responsible for monitoring the layer immediately beneath it for failures. In our previous example scenario, the load balancer is the top layer. If one of the web servers (bottom layer) becomes unavailable, the load balancer will stop redirecting requests for that specific server.
 
 # Auto Scaling
 
-- How does it work?
+autoscaling helps ensure that you have the correct number of EC2 instances available to handle the load for your application.
 
-- Go set one up for your app
+## - How does it work?
+
+In AWS autoscaling works by creating collections of EC2 instances called Auto Scaling Groups, You can specify the ammount of instances in each group and
+
 
 
 ## **Source List**
 
 - https://www.nginx.com/resources/glossary/load-balancing/
 - https://www.hashicorp.com/resources/what-is-mutable-vs-immutable-infrastructure/
+- https://www.digitalocean.com/community/tutorials/what-is-high-availability
+- https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html
