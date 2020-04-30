@@ -126,3 +126,6 @@ resource "aws_autoscaling_group" "bar" {
 - https://www.hashicorp.com/resources/what-is-mutable-vs-immutable-infrastructure/
 - https://www.digitalocean.com/community/tutorials/what-is-high-availability
 - https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html
+
+#### Author
+**Victor Sibanda** - *Junior DevOps Engineer* - [victorsibanda](https://github.com/victorsibanda)
