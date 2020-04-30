@@ -43,6 +43,7 @@ Using the AWS Management Console, you can easily create new Multi-AZ deployments
 - https://aws.amazon.com/elasticsearch-service/the-elk-stack/
 - https://www.elastic.co/webinars/elk-stack-devops-environment
 - https://aws.amazon.com/rds/features/multi-az/
+https://aws.amazon.com/rds/aurora/
 
 #### Author
 **Victor Sibanda** - *Junior DevOps Engineer* - [victorsibanda](https://github.com/victorsibanda)
