@@ -19,17 +19,30 @@ Kibana is an open-source data visualisation and exploration tool for reviewing l
 
 #High Availability - Multi AZ
 
-## How do you achieve this High Availability?
+In Multi-AZ deployment, Amazon RDS provides high availability and durability for DB instances, making them a natural fit for production database workloads. When you provision a Multi-AZ DB instance, Amazon RDS creates a primary DB instance, and synchronously replicates the data to standby instance in a different  AZ (Availability Zone). Each AZ runs its own physically distinct, independent infrastructure and it is highly reliable.
 
 ## What are Availability Zones?
 
-##How do you set up a multi Availability zone infrastructure
+With Amazon Web Services data centres have facilities are in different physical locations. The locations are categorised as regions and availability zone.
+
+Each AWS Region is large and widely dispersed into different geographic locations. Hence There are availability zones which exist. These locations are separated that way if one availability zone fails you are able to access the other one within the region. That way your server is always available.
+
+![ElastiCache-RegionsAndAZs](https://user-images.githubusercontent.com/60632288/80703070-033c2b80-8ada-11ea-89fc-c2c75223c37c.png)
+
+
+## How do you set up a multi Availability zone infrastructure
+
+Using the AWS Management Console, you can easily create new Multi-AZ deployments or modify existing Single-AZ instances to become Multi-AZ deployments.
+
+* To create a new Multi-AZ deployment using the AWS Management Console, simply click the "Yes" option for "Multi-AZ Deployment" when launching a DB Instance.
+
+* To convert an existing Single-AZ DB Instance to a Multi-AZ deployment, use the "Modify" option corresponding to your DB Instance in the AWS Management Console.
 
 # **Sources**
 - https://aws.amazon.com/cloudwatch/
 - https://aws.amazon.com/elasticsearch-service/the-elk-stack/
 - https://www.elastic.co/webinars/elk-stack-devops-environment
-
+- https://aws.amazon.com/rds/features/multi-az/
 
 #### Author
 **Victor Sibanda** - *Junior DevOps Engineer* - [victorsibanda](https://github.com/victorsibanda)
